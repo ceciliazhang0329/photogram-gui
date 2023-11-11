@@ -1,0 +1,30 @@
+<h1>List of photos</h1>
+
+<hr>
+
+<table border="1">
+  <tbody>
+    <tr>
+      <th>Image</th>
+      <th>Caption</th>
+      <th>Owner</th>
+      <th>Posted</th>
+      <th></th>
+    </tr>
+    
+    <% @list_of_photos.each do |a_photo| %>
+      <tr>
+        <td><%= a_user.id %></td>
+        <td><%= a_user.username %></td>
+        <td>
+          <a href="/users/<%= a_user.username %>">
+            Show details
+          </a>
+        </td>
+      </tr>
+    <% end %>
+
+
+
+  </tbody>
+</table>
